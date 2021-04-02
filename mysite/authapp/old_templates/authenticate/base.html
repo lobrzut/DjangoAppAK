@@ -23,6 +23,7 @@
       {% if user.is_authenticated %}
         <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+          <a class="nav-link" href="{% url 'posts' %}">ImagePosts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'edit_profile' %}">Edit Profile</a>
