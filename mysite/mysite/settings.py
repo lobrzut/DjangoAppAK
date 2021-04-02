@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authapp',
     'posts',
+    'weather',
+    'rest_framework',
+    'trackingAPI', 
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,5 @@ STATIC_URL = '/static/'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CELERY_BROKER_URL = 'amqp://localhost//'
+CELERY_RESULT_BACKEND = 'amqp://localhost//'

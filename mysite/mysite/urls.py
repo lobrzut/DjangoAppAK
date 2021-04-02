@@ -17,13 +17,19 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from trackingAPI.views import ListCryptocurrencyView
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('authapp.urls')),
     path('posts/',include('posts.urls')),
-    
+    path('weather/',include('weather.urls')),
+    path('trackingAPI/',include('trackingAPI.urls')),
+    #path('trackingAPI/', views.ListCryptocurrencyView),
+ 
+
 ]
 
 

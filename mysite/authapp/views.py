@@ -4,6 +4,13 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm, Password
 from django.contrib import messages 
 from .forms import SignUpForm, EditProfileForm
 
+
+# import json to load json data to python dictionary
+import json
+# urllib.request to make a request to api
+import urllib.request
+
+
 def home(request):
 	return render(request, 'authenticate/home.html', {})
 

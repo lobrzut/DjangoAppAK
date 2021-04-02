@@ -20,18 +20,28 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       
+
       {% if user.is_authenticated %}
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="{% url 'homeposts' %}">ImagePosts</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'listcc' %}">CryptoCurencyTracking</a>
+        </li>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}">Weather</a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="{% url 'edit_profile' %}">Edit Profile</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'change_password' %}">Change Password</a>
+        </li>
+                 <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
         </li>
       {% else %}
         <li class="nav-item">
