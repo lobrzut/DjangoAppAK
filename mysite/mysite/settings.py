@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'posts',
     'weather',
     'rest_framework',
-    'trackingAPI', 
+    'trackingAPI',
+    'notes', 
 ]
 
 MIDDLEWARE = [

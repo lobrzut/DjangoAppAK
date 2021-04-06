@@ -24,6 +24,7 @@ from trackingAPI.views import ListCryptocurrencyView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('authapp.urls')),
+    path('editor/',include('notes.urls')),
     path('posts/',include('posts.urls')),
     path('weather/',include('weather.urls')),
     path('trackingAPI/',include('trackingAPI.urls')),

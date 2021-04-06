@@ -35,10 +35,6 @@ def logout_user(request):
 	messages.success(request, ('You Have Been Logged Out...'))
 	return redirect('home')
 
-def info(request):
-	au=auth_user.objects.all() # Collect all records from table 
-	return render(request,'authenticate/info.html',{})
-
 def register_user(request):
 	if request.method == 'POST':
 		form = SignUpForm(request.POST)
